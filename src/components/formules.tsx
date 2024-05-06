@@ -29,7 +29,7 @@ export function Formules() {
             </Typography>
           </Typography>
           <Typography>
-            Cours loisirs à partir de 13 ans & plus Tous les lundis et jeudis de
+            {`Cours loisirs à partir de 13 ans & plus Tous les lundis et jeudis de
             19H00 à 21H00 La pratique des sports de contacts présente de
             nombreux bienfaits pour tout public. Elle favorise le renforcement
             musculaire, l'amélioration de la coordination et de l'agilité, ainsi
@@ -37,7 +37,7 @@ export function Formules() {
             De plus, elle permet de libérer le stress et de canaliser l'énergie
             de manière positive. Enfin, les sports de contacts favorisent la
             discipline, l'apprentissage du respect des règles et la gestion des
-            émotions.
+            émotions.`}
           </Typography>
         </CardBody>
       </Card>
@@ -57,14 +57,14 @@ export function Formules() {
             </Typography>
           </Typography>
           <Typography>
-            Avec quatre à cinq séances par semaine, ces sessions intensives se
+            {`Avec quatre à cinq séances par semaine, ces sessions intensives se
             concentrent sur le développement technico-tactique, le renforcement
             musculaire et les sessions de Sparring pour améliorer les
             compétences en situation réelle. Cette routine d'entraînement
             rigoureuse vise l'amélioration continue des performances, la
             préparation physique et mentale aux compétitions, et la progression
             globale dans le sport de contacts. Participation aux compétitions
-            fédérales, Gala nationaux et internationaux.
+            fédérales, Gala nationaux et internationaux.`}
           </Typography>
         </CardBody>
       </Card>
@@ -84,7 +84,7 @@ export function Formules() {
             </Typography>
           </Typography>
           <Typography>
-            Le coaching privé offre une attention individuelle, une progression
+            {`Le coaching privé offre une attention individuelle, une progression
             rapide, une confiance et une motivation accrues, une flexibilité
             dans l'organisation des séances et une aide pour atteindre vos
             objectifs spécifiques. La pratique d'un sport ou d'une activité
@@ -94,7 +94,7 @@ export function Formules() {
             d'autres aspects de la vie quotidienne. En résumé, la pratique d'une
             activité physique offre une opportunité de se sentir plus fort
             mentalement et physiquement, tout en améliorant sa condition
-            physique générale.
+            physique générale.`}
           </Typography>
         </CardBody>
       </Card>
