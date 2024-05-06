@@ -11,7 +11,7 @@ import logo from "@/assets/images/logo.png";
 export function HeaderNavbar() {
   return (
     <ul className="w-screen h-24 flex justify-between items-center pl-10 pr-10">
-      <div className="flex basis-3/12">
+      <div className="flex basis-3/12 gap-5">
         <Typography
           as="li"
           variant="small"
@@ -59,22 +59,9 @@ export function HeaderNavbar() {
         >
           <a
             href="#"
-            className="flex items-center hover:text-blue-500 transition-colors"
+            className="flex items-center hover:text-red-500 transition-colors"
           >
             Tarifs
-          </a>
-        </Typography>
-        <Typography
-          as="li"
-          variant="small"
-          color="white"
-          className="p-1 font-medium uppercase"
-        >
-          <a
-            href="#"
-            className="flex items-center hover:text-blue-500 transition-colors"
-          >
-            Contact
           </a>
         </Typography>
       </div>
@@ -84,7 +71,21 @@ export function HeaderNavbar() {
         width={150}
         className="mt-1 flex flex-initial justify-center "
       />
-      <div className="flex basis-3/12 justify-end">icons</div>
+      <div className="flex basis-3/12 justify-end">
+        <Typography
+          as="li"
+          variant="small"
+          color="white"
+          className="p-1 font-medium uppercase"
+        >
+          <a
+            href="#"
+            className="flex items-center hover:text-red-500 transition-colors"
+          >
+            Contact
+          </a>
+        </Typography>
+      </div>
     </ul>
   );
 }

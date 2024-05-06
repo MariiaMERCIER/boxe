@@ -18,29 +18,27 @@ export function CarrouselHome() {
         />
         <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
           <div className="w-3/4 text-center md:w-2/4">
-            <Typography
+            {/* <Typography
               variant="h1"
               color="white"
               className="mb-4 text-3xl md:text-4xl lg:text-5xl"
             >
-              The Beauty of Nature
-            </Typography>
+              Le club de boxe
+            </Typography> */}
             <Typography
               variant="lead"
               color="white"
               className="mb-12 opacity-80"
             >
-              It is not so much for its beauty that the forest makes a claim
-              upon men&apos;s hearts, as for that subtle something, that quality
-              of air that emanation from old trees, that so wonderfully changes
-              and renews a weary spirit.
+              Philippe Coelho vous accueille dans son club de boxe à
+              Aix-les-bains.
             </Typography>
             <div className="flex justify-center gap-2">
               <Button size="lg" color="white">
-                Explore
+                Le club
               </Button>
               <Button size="lg" color="white" variant="text">
-                Gallery
+                Planning
               </Button>
             </div>
           </div>
@@ -54,29 +52,28 @@ export function CarrouselHome() {
         />
         <div className="absolute inset-0 grid h-full w-full items-center bg-black/75">
           <div className="w-3/4 pl-12 md:w-2/4 md:pl-20 lg:pl-32">
-            <Typography
+            {/* <Typography
               variant="h1"
               color="white"
               className="mb-4 text-3xl md:text-4xl lg:text-5xl"
             >
               The Beauty of Nature
-            </Typography>
+            </Typography> */}
             <Typography
               variant="lead"
               color="white"
               className="mb-12 opacity-80"
             >
-              It is not so much for its beauty that the forest makes a claim
-              upon men&apos;s hearts, as for that subtle something, that quality
-              of air that emanation from old trees, that so wonderfully changes
-              and renews a weary spirit.
+              Que vous soyez débutant ou confirmé venez pratiquer la boxe
+              Thaïlandaise dans une salle équipée et avec un entraineur
+              qualifié.
             </Typography>
             <div className="flex gap-2">
               <Button size="lg" color="white">
-                Explore
+                Le club
               </Button>
               <Button size="lg" color="white" variant="text">
-                Gallery
+                Planning
               </Button>
             </div>
           </div>
@@ -95,24 +92,22 @@ export function CarrouselHome() {
               color="white"
               className="mb-4 text-3xl md:text-4xl lg:text-5xl"
             >
-              The Beauty of Nature
+              Palmares du club
             </Typography>
             <Typography
               variant="lead"
               color="white"
               className="mb-12 opacity-80"
             >
-              It is not so much for its beauty that the forest makes a claim
-              upon men&apos;s hearts, as for that subtle something, that quality
-              of air that emanation from old trees, that so wonderfully changes
-              and renews a weary spirit.
+              Félicitations à nos champions qui ont brillé lors des dernières
+              compétitions.
             </Typography>
             <div className="flex gap-2">
               <Button size="lg" color="white">
-                Explore
+                Le club
               </Button>
               <Button size="lg" color="white" variant="text">
-                Gallery
+                Planning
               </Button>
             </div>
           </div>
