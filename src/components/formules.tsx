@@ -12,7 +12,7 @@ import Image from "next/image";
 import image3 from "@/assets/images/coaching.jpg";
 export function Formules() {
   return (
-    <div className="flex gap-7">
+    <div className="flex gap-7" id="tarifs">
       <Card className="mt-6 w-96">
         <CardHeader color="blue-gray" className="relative h-56">
           <Image src={image1} alt="amateur" />
@@ -25,7 +25,7 @@ export function Formules() {
           >
             Amauter
             <Typography variant="lead" color="red">
-              150,00 €
+              150,00 € / an
             </Typography>
           </Typography>
           <Typography>
@@ -53,7 +53,7 @@ export function Formules() {
           >
             Professionnal
             <Typography variant="lead" color="red">
-              200,00 €
+              200,00 €/ an
             </Typography>
           </Typography>
           <Typography>

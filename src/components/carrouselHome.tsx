@@ -7,7 +7,8 @@ import Image from "next/image";
 export function CarrouselHome() {
   return (
     <Carousel
-      className="h-screen"
+      id="home"
+      className="h-fit"
       navigation={() => <div className="display=none" />}
     >
       <div className="relative h-full w-full">
