@@ -10,13 +10,13 @@ import logo from "@/assets/images/logo.png";
 
 export function HeaderNavbar() {
   return (
-    <ul className="w-screen h-24 flex justify-between items-center pl-10 pr-10">
-      <div className="flex basis-3/12 gap-6">
+    <ul className="h-24 flex justify-between items-center pl-20 pr-20 ">
+      <div className="flex gap-6">
         <Typography
           as="li"
           variant="small"
           color="white"
-          className="p-1 font-medium uppercase"
+          className="p-1 font-medium uppercase text-nowrap"
         >
           <a
             href="#home"
@@ -29,7 +29,7 @@ export function HeaderNavbar() {
           as="li"
           variant="small"
           color="white"
-          className="p-1 font-medium uppercase"
+          className="p-1 font-medium uppercase text-nowrap"
         >
           <a
             href="#club"
@@ -42,7 +42,7 @@ export function HeaderNavbar() {
           as="li"
           variant="small"
           color="white"
-          className="p-1 font-medium uppercase"
+          className="p-1 font-medium uppercase text-nowrap"
         >
           <a
             href="#tarifs"
@@ -55,7 +55,7 @@ export function HeaderNavbar() {
           as="li"
           variant="small"
           color="white"
-          className="p-1 font-medium uppercase"
+          className="p-1 font-medium uppercase text-nowrap"
         >
           <a
             href="#planning"
@@ -64,19 +64,6 @@ export function HeaderNavbar() {
             Planning
           </a>
         </Typography>
-        {/* <Typography
-          as="li"
-          variant="small"
-          color="white"
-          className="p-1 font-medium uppercase"
-        >
-          <a
-            href="#planning"
-            className="flex items-center hover:text-red-500 transition-colors"
-          >
-            Galerie
-          </a>
-        </Typography> */}
       </div>
       <Image
         src={logo}
@@ -89,7 +76,7 @@ export function HeaderNavbar() {
           as="li"
           variant="small"
           color="white"
-          className="p-1 font-medium uppercase"
+          className="p-1 font-medium uppercase text-nowrap"
         >
           <a
             href="#contact"

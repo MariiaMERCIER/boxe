@@ -2,9 +2,7 @@ import {
   Card,
   CardHeader,
   CardBody,
-  CardFooter,
   Typography,
-  Button,
 } from "@material-tailwind/react";
 import image1 from "@/assets/images/nonPro.jpg";
 import image2 from "@/assets/images/pro.jpg";

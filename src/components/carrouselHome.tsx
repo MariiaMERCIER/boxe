@@ -3,6 +3,7 @@ import image1 from "@/assets/images/boxe-home-img1.jpg";
 import image2 from "@/assets/images/boxe-home-img2.jpg";
 import image3 from "@/assets/images/boxe-home-img3.jpg";
 import Image from "next/image";
+import { ButtonAction } from "@/components/ButtonAction";
 
 export function CarrouselHome() {
   return (
@@ -19,13 +20,6 @@ export function CarrouselHome() {
         />
         <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
           <div className="w-3/4 text-center md:w-2/4">
-            {/* <Typography
-              variant="h1"
-              color="white"
-              className="mb-4 text-3xl md:text-4xl lg:text-5xl"
-            >
-              Le club de boxe
-            </Typography> */}
             <Typography
               variant="lead"
               color="white"
@@ -35,12 +29,13 @@ export function CarrouselHome() {
               Aix-les-bains.
             </Typography>
             <div className="flex justify-center gap-2">
-              <Button size="lg" color="white">
-                Le club
-              </Button>
-              <Button size="lg" color="white" variant="text">
-                Planning
-              </Button>
+              <ButtonAction name="Le club" color="white" link="#club" />
+              <ButtonAction
+                name="Planning"
+                variant="text"
+                color="white"
+                link="#planning"
+              />
             </div>
           </div>
         </div>
@@ -53,13 +48,6 @@ export function CarrouselHome() {
         />
         <div className="absolute inset-0 grid h-full w-full items-center bg-black/75">
           <div className="w-3/4 pl-12 md:w-2/4 md:pl-20 lg:pl-32">
-            {/* <Typography
-              variant="h1"
-              color="white"
-              className="mb-4 text-3xl md:text-4xl lg:text-5xl"
-            >
-              The Beauty of Nature
-            </Typography> */}
             <Typography
               variant="lead"
               color="white"
@@ -70,12 +58,13 @@ export function CarrouselHome() {
               qualifié.
             </Typography>
             <div className="flex gap-2">
-              <Button size="lg" color="white">
-                Le club
-              </Button>
-              <Button size="lg" color="white" variant="text">
-                Planning
-              </Button>
+              <ButtonAction name="Le club" color="white" link="#club" />
+              <ButtonAction
+                name="Planning"
+                variant="text"
+                color="white"
+                link="#planning"
+              />
             </div>
           </div>
         </div>
@@ -104,12 +93,13 @@ export function CarrouselHome() {
               compétitions.
             </Typography>
             <div className="flex gap-2">
-              <Button size="lg" color="white">
-                Le club
-              </Button>
-              <Button size="lg" color="white" variant="text">
-                Planning
-              </Button>
+              <ButtonAction name="Le club" color="white" link="#club" />
+              <ButtonAction
+                name="Planning"
+                variant="text"
+                color="white"
+                link="#planning"
+              />
             </div>
           </div>
         </div>
