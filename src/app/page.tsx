@@ -3,13 +3,13 @@
 import { AboutClub } from "@/components/AboutClub";
 import { CarrouselHome } from "@/components/CarrouselHome";
 import { Contact } from "@/components/Contact";
+import { Footer } from "@/components/Footer";
 import { Formules } from "@/components/Formules";
 import { HeaderNavbar } from "@/components/HeaderNavbar";
 import { Planning } from "@/components/Planning";
 import { Typography } from "@material-tailwind/react";
-import Map, { GeolocateControl, NavigationControl } from "react-map-gl";
+
 import "mapbox-gl/dist/mapbox-gl.css";
-import classes from "./Page.module.css";
 
 export default function Home() {
   const mapboxToken = process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN;
@@ -56,6 +56,9 @@ export default function Home() {
         </Typography>
 
         <Contact />
+      </div>
+      <div className="w-full border-t border-gray-600 border-solid">
+        <Footer />
       </div>
     </main>
   );

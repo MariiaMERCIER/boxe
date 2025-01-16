@@ -23,6 +23,9 @@ export function Contact() {
                 placeholder="Prénom NOM"
                 crossOrigin=""
               />
+              <Typography className="mt-2 text-xs font-normal text-blue-gray-500">
+                Obligatoire
+              </Typography>
             </div>
             <div>
               <Typography variant="h6" className="text-white">
@@ -34,6 +37,9 @@ export function Contact() {
                 crossOrigin=""
                 color="white"
               />
+              <Typography className="mt-2 text-xs font-normal text-blue-gray-500">
+                Obligatoire
+              </Typography>
             </div>
             <div>
               <Typography variant="h6" className="text-white">

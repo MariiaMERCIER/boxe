@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  Navbar,
-  Collapse,
-  Typography,
-  IconButton,
-} from "@material-tailwind/react";
+import { Typography } from "@material-tailwind/react";
 import Image from "next/image";
 import logo from "@/assets/images/logo.png";
 
