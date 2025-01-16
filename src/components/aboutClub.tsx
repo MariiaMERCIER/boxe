@@ -6,14 +6,6 @@ import { ButtonAction } from "@/components/ButtonAction";
 export function AboutClub() {
   return (
     <div className="flex flex-col my-0 mx-auto gap-6 w-1200" id="club">
-      <Typography variant="h3" className="uppercase text-black">
-        Le club
-        <i>
-          <b className="text-red-600">
-            {"   "}ASCM - Votre Passion, Notre Engagement !
-          </b>
-        </i>
-      </Typography>
       <div className="flex flex-row gap-16">
         <Image src={image1} alt="chef" width="500" height="500" />
         <div className="flex flex-col items-start justify-between aligngap-6">

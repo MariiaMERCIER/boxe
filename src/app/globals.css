@@ -34,3 +34,7 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+.mapboxgl-popup-close-button {
+  padding: 7px 10px;
+}

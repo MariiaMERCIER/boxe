@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function Planning() {
   return (
-    <div>
+    <div id="planning">
       <Image src={image} className="w-screen h-full" alt="planning" />
     </div>
   );
