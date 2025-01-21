@@ -12,6 +12,7 @@
     "@material-tailwind/react": "^2.1.9",
     "dotenv": "^16.4.7",
     "mailgun-js": "^0.22.0",
+    "mailgun.js": "^11.1.0",
     "mapbox-gl": "^3.9.3",
     "next": "14.1.4",
     "react": "^18",

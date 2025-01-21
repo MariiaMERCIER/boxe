@@ -22,7 +22,7 @@ export function Map() {
       .setLngLat([5.9165639, 45.6865781])
       .setPopup(
         new mapboxgl.Popup().setHTML(
-          "<b>ASC Marlioz</b><p>Boulevard de la Roche du roi<br/> Salle Ste-Bernadette <br/> Aix-les-Bains(73100)</p>"
+          "<b>ASCM Marlioz</b><p>Boulevard de la Roche du roi<br/> Salle Ste-Bernadette <br/> Aix-les-Bains(73100)</p>"
         )
       )
       .addTo(map);

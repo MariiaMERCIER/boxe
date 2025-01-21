@@ -9,10 +9,16 @@ export function ButtonAction(props: {
   color?: color;
   variant?: variant;
   link: Url;
+  disabled?: boolean;
 }) {
   return (
     <Link href={props.link}>
-      <Button size="lg" color={props.color} variant={props.variant}>
+      <Button
+        size="lg"
+        color={props.color}
+        variant={props.variant}
+        disabled={props.disabled || false}
+      >
         {props.name}
       </Button>
     </Link>

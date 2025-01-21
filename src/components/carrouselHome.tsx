@@ -1,3 +1,4 @@
+"client side";
 import { Carousel, Typography, Button } from "@material-tailwind/react";
 import image1 from "@/assets/images/boxe-home-img1.jpg";
 import image2 from "@/assets/images/boxe-home-img2.jpg";
