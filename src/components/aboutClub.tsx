@@ -5,7 +5,7 @@ import { ButtonAction } from "@/components/ButtonAction";
 
 export function AboutClub() {
   return (
-    <div className="flex flex-col my-0 mx-auto gap-6 w-1200" id="club">
+    <div className="flex flex-col my-0 mx-auto gap-6 w-1200">
       <div className="flex flex-row gap-16">
         <Image src={image1} alt="chef" width="500" height="500" />
         <div className="flex flex-col items-start justify-between aligngap-6">

@@ -17,8 +17,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta name="description" content="Carte interactive avec Mapbox" />
-        <title>Carte Mapbox</title>
+        <meta name="description" content="Start  with boxe club ASCM" />
+        <title>ASCM ton club de boxe!</title>
       </head>
 
       <body className={inter.className}>{children}</body>

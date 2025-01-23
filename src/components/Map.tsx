@@ -16,7 +16,6 @@ export function Map() {
     });
 
     map.addControl(new mapboxgl.NavigationControl(), "top-right");
-    // Créer un marqueur
 
     new mapboxgl.Marker({ color: "red" })
       .setLngLat([5.9165639, 45.6865781])

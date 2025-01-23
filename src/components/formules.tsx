@@ -10,7 +10,7 @@ import Image from "next/image";
 import image3 from "@/assets/images/coaching.jpg";
 export function Formules() {
   return (
-    <div className="flex gap-7" id="tarifs">
+    <div className="flex gap-7">
       <Card className="mt-6 w-96">
         <CardHeader color="blue-gray" className="relative h-56">
           <Image src={image1} alt="amateur" />

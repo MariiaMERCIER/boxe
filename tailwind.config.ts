@@ -18,6 +18,9 @@ module.exports = withMT({
       width: {
         "1200": "75rem",
       },
+      minHeight: {
+        "592": "37rem",
+      },
     },
   },
   plugins: [],

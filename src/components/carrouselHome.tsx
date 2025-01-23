@@ -9,7 +9,6 @@ import { ButtonAction } from "@/components/ButtonAction";
 export function CarrouselHome() {
   return (
     <Carousel
-      id="home"
       className="h-fit"
       navigation={() => <div className="display=none" />}
     >

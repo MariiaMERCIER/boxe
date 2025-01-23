@@ -27,7 +27,7 @@ export function HeaderNavbar() {
           className="p-1 font-medium uppercase text-nowrap"
         >
           <a
-            href="#club"
+            href="#about"
             className="flex items-center hover:text-red-500 transition-colors"
           >
             Le club
@@ -40,7 +40,7 @@ export function HeaderNavbar() {
           className="p-1 font-medium uppercase text-nowrap"
         >
           <a
-            href="#tarifs"
+            href="#price"
             className="flex items-center hover:text-red-500 transition-colors"
           >
             Nos formules
@@ -64,7 +64,7 @@ export function HeaderNavbar() {
         src={logo}
         alt="logo"
         width={150}
-        className="mt-1 flex flex-initial justify-center "
+        className="mt-1 flex flex-initial justify-center"
       />
       <div className="flex basis-3/12 justify-end">
         <Typography
