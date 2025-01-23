@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { HeaderNavbar } from "@/components/HeaderNavbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +22,12 @@ export default function RootLayout({
         <title>ASCM ton club de boxe!</title>
       </head>
 
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="sticky top-0 w-full h-full bg-black overflow-hidden z-10">
+          <HeaderNavbar />
+        </div>
+        <div>{children}</div>
+      </body>
     </html>
   );
 }

@@ -29,12 +29,12 @@ export function CarrouselHome() {
               Aix-les-bains.
             </Typography>
             <div className="flex justify-center gap-2">
-              <ButtonAction name="Le club" color="white" link="#club" />
+              <ButtonAction name="Le club" color="white" link="/#about" />
               <ButtonAction
                 name="Planning"
                 variant="text"
                 color="white"
-                link="#planning"
+                link="/#planning"
               />
             </div>
           </div>
@@ -63,7 +63,7 @@ export function CarrouselHome() {
                 name="Planning"
                 variant="text"
                 color="white"
-                link="#planning"
+                link="/#planning"
               />
             </div>
           </div>
@@ -93,12 +93,22 @@ export function CarrouselHome() {
               compétitions.
             </Typography>
             <div className="flex gap-2">
-              <ButtonAction name="Le club" color="white" link="#club" />
+              <ButtonAction
+                name="Le club"
+                color="white"
+                variant="text"
+                link="/#about"
+              />
               <ButtonAction
                 name="Planning"
                 variant="text"
                 color="white"
-                link="#planning"
+                link="/#planning"
+              />
+              <ButtonAction
+                name="Nos champions"
+                color="white"
+                link="/#champion"
               />
             </div>
           </div>

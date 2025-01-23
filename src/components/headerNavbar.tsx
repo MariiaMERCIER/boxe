@@ -1,7 +1,9 @@
+"use client";
 import React from "react";
 import { Typography } from "@material-tailwind/react";
 import Image from "next/image";
 import logo from "@/assets/images/logo.png";
+import Link from "next/link";
 
 export function HeaderNavbar() {
   return (
@@ -14,7 +16,7 @@ export function HeaderNavbar() {
           className="p-1 font-medium uppercase text-nowrap"
         >
           <a
-            href="#home"
+            href="/"
             className="flex items-center hover:text-red-500 transition-colors"
           >
             Accueil
@@ -27,7 +29,7 @@ export function HeaderNavbar() {
           className="p-1 font-medium uppercase text-nowrap"
         >
           <a
-            href="#about"
+            href="/#about"
             className="flex items-center hover:text-red-500 transition-colors"
           >
             Le club
@@ -40,7 +42,7 @@ export function HeaderNavbar() {
           className="p-1 font-medium uppercase text-nowrap"
         >
           <a
-            href="#price"
+            href="/#price"
             className="flex items-center hover:text-red-500 transition-colors"
           >
             Nos formules
@@ -53,19 +55,35 @@ export function HeaderNavbar() {
           className="p-1 font-medium uppercase text-nowrap"
         >
           <a
-            href="#planning"
+            href="/#planning"
             className="flex items-center hover:text-red-500 transition-colors"
           >
             Planning
           </a>
         </Typography>
+        {/* <Typography
+          as="li"
+          variant="small"
+          color="white"
+          className="p-1 font-medium uppercase text-nowrap"
+        >
+          <a
+            href="/champion"
+            className="flex items-center hover:text-red-500 transition-colors"
+          >
+            Nos champions
+          </a>
+        </Typography> */}
       </div>
-      <Image
-        src={logo}
-        alt="logo"
-        width={150}
-        className="mt-1 flex flex-initial justify-center"
-      />
+      <Link href="/">
+        <Image
+          src={logo}
+          alt="logo"
+          width={150}
+          className="mt-1 flex flex-initial justify-center"
+        />
+      </Link>
+
       <div className="flex basis-3/12 justify-end">
         <Typography
           as="li"
@@ -74,7 +92,7 @@ export function HeaderNavbar() {
           className="p-1 font-medium uppercase text-nowrap"
         >
           <a
-            href="#contact"
+            href="/#contact"
             className="flex items-center hover:text-red-500 transition-colors"
           >
             Contact

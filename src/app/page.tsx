@@ -5,22 +5,17 @@ import { CarrouselHome } from "@/components/CarrouselHome";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { Formules } from "@/components/Formules";
-import { HeaderNavbar } from "@/components/HeaderNavbar";
 import { Planning } from "@/components/Planning";
 import { Typography } from "@material-tailwind/react";
 
 import "mapbox-gl/dist/mapbox-gl.css";
 
-export default function Home() {
-  const mapboxToken = process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN;
+export default async function Home() {
   return (
     <main
       className="flex min-h-screen flex-col items-center justify-between"
       id="home"
     >
-      <div className="sticky top-0 w-full h-full bg-black overflow-hidden z-10">
-        <HeaderNavbar />
-      </div>
       <div className="flex flex-col h-screen">
         <CarrouselHome />
       </div>
