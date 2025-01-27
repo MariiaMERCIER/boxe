@@ -1,7 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["res.cloudinary.com", "api.cloudinary.com"],
+    domains: [
+      "res.cloudinary.com",
+      "api.cloudinary.com",
+      `${process.env.AUTH0_ISSUER_BASE_URL}`,
+    ],
   },
   env: {
     NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME:

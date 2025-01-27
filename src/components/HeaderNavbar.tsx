@@ -4,8 +4,11 @@ import { Typography } from "@material-tailwind/react";
 import Image from "next/image";
 import logo from "@/assets/images/logo.png";
 import Link from "next/link";
+import { useUser } from "@auth0/nextjs-auth0/client";
 
 export function HeaderNavbar() {
+  const { user, isLoading } = useUser();
+  console.log(user);
   return (
     <ul className="h-24 flex justify-between items-center pl-20 pr-20 ">
       <div className="flex gap-6">
@@ -83,7 +86,6 @@ export function HeaderNavbar() {
           className="mt-1 flex flex-initial justify-center"
         />
       </Link>
-
       <div className="flex basis-3/12 justify-end">
         <Typography
           as="li"
@@ -99,6 +101,15 @@ export function HeaderNavbar() {
           </a>
         </Typography>
       </div>
+      {user === undefined ? (
+        <a href="/api/auth/login">
+          <Typography>Login</Typography>
+        </a>
+      ) : (
+        <a href="/api/auth/logout">
+          <Typography>LogOut</Typography>
+        </a>
+      )}
     </ul>
   );
 }

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { HeaderNavbar } from "@/components/HeaderNavbar";
+import { UserProvider } from "@auth0/nextjs-auth0/client";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,13 +22,14 @@ export default function RootLayout({
         <meta name="description" content="Start  with boxe club ASCM" />
         <title>ASCM ton club de boxe!</title>
       </head>
-
-      <body className={inter.className}>
-        <div className="sticky top-0 w-full h-full bg-black overflow-hidden z-10">
-          <HeaderNavbar />
-        </div>
-        <div>{children}</div>
-      </body>
+      <UserProvider>
+        <body className={inter.className}>
+          <div className="sticky top-0 w-full h-full bg-black overflow-hidden z-10">
+            <HeaderNavbar />
+          </div>
+          <div>{children}</div>
+        </body>
+      </UserProvider>
     </html>
   );
 }

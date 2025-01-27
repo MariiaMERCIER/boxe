@@ -6,6 +6,7 @@ import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { Formules } from "@/components/Formules";
 import { Planning } from "@/components/Planning";
+import { useUser } from "@auth0/nextjs-auth0/client";
 import { Typography } from "@material-tailwind/react";
 
 import "mapbox-gl/dist/mapbox-gl.css";
