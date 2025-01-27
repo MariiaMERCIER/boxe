@@ -61,7 +61,7 @@ export function HeaderNavbar() {
             Planning
           </a>
         </Typography>
-        {/* <Typography
+        <Typography
           as="li"
           variant="small"
           color="white"
@@ -73,7 +73,7 @@ export function HeaderNavbar() {
           >
             Nos champions
           </a>
-        </Typography> */}
+        </Typography>
       </div>
       <Link href="/">
         <Image
