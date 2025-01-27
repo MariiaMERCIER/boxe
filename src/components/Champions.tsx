@@ -36,7 +36,7 @@ export default function Champions() {
   console.log(images);
   return (
     <div>
-      <h2>Galerie d'images</h2>
+      <h2>{"Galerie d'images"}</h2>
       {isLoading ? (
         <p>Chargement...</p>
       ) : (
@@ -44,6 +44,7 @@ export default function Champions() {
           {images?.resources.map((image) => {
             return (
               <CldImage
+                key={image.asset_id}
                 width="960"
                 height="600"
                 src={image.public_id}

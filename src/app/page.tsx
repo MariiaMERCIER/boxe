@@ -10,7 +10,7 @@ import { Typography } from "@material-tailwind/react";
 
 import "mapbox-gl/dist/mapbox-gl.css";
 
-export default async function Home() {
+export default function Home() {
   return (
     <main
       className="flex min-h-screen flex-col items-center justify-between"
