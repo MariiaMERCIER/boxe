@@ -8,6 +8,7 @@ import image1 from "@/assets/images/nonPro.jpg";
 import image2 from "@/assets/images/pro.jpg";
 import Image from "next/image";
 import image3 from "@/assets/images/coaching.jpg";
+
 export function Formules() {
   return (
     <div className="flex gap-7">
