@@ -4,6 +4,9 @@ import useSWR, { Fetcher } from "swr";
 
 import Image from "next/image";
 import { CldImage } from "next-cloudinary";
+import { Typography } from "@material-tailwind/react";
+import { useUser } from "@auth0/nextjs-auth0/client";
+import Link from "next/link";
 
 type Data = {
   resources: {
@@ -30,15 +33,32 @@ const fetcher: Fetcher<Data> = async (url: string) => {
 
 export default function Champions() {
   const { data: images, error, isLoading } = useSWR("/api/getImages", fetcher);
-
-  if (isLoading) return <p>Chargement...</p>;
+  const { user, isLoading: loadingUser } = useUser();
+  console.log("user", user);
+  if (isLoading ?? loadingUser) return <p>Chargement...</p>;
   if (error) return <p>Erreur: {error.message}</p>;
-  console.log(images);
+
   return (
     <div>
-      <h2>{"Galerie d'images"}</h2>
+      <Typography variant="h3">{"Galerie d'images"}</Typography>
+      {user ? (
+        <Link href="/admin">Rajouter les photos</Link>
+      ) : (
+        <div>
+          <Typography variant="small">
+            <i>
+              Pour pouvoir rajouter/supprimer des photos il faudrait vous
+              connecter en tant que Administrateur du site.
+            </i>
+          </Typography>
+          <a href="/api/auth/login">
+            <button>Se connecter</button>
+          </a>
+        </div>
+      )}
+
       {isLoading ? (
-        <p>Chargement...</p>
+        <Typography variant="small">Chargement...</Typography>
       ) : (
         <div>
           {images?.resources.map((image) => {

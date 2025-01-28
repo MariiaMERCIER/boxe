@@ -25,7 +25,7 @@ export default function Home() {
         id="about"
       >
         <div className="w-1200 my-0 mx-auto">
-          <Typography variant="h3" className="uppercase text-black ">
+          <Typography variant="h3" className="uppercase text-black">
             Le club
             <i>
               <b className="text-red-600">

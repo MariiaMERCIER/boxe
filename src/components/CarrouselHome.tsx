@@ -108,7 +108,7 @@ export function CarrouselHome() {
               <ButtonAction
                 name="Nos champions"
                 color="white"
-                link="/#champion"
+                link="/champion"
               />
             </div>
           </div>
