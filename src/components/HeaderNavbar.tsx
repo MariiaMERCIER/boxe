@@ -96,7 +96,7 @@ export function HeaderNavbar() {
                 <Badge
                   placement="bottom-end"
                   overlap="circular"
-                  color={user ? "green" : "red"}
+                  color={isLoading ? "gray" : user ? "green" : "red"}
                   withBorder
                 >
                   <Image
