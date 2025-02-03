@@ -65,9 +65,6 @@ export default function Home() {
         </Typography>
         <Contact />
       </div>
-      <div className="w-full  border-t border-gray-600 border-solid">
-        <Footer />
-      </div>
     </main>
   );
 }

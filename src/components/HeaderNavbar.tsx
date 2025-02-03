@@ -19,95 +19,72 @@ import { useUser } from "@auth0/nextjs-auth0/client";
 export function HeaderNavbar() {
   const { user, isLoading } = useUser();
   return (
-    <ul className="h-24 flex justify-between items-center pl-20 pr-20 ">
+    <ul className="h-24 flex justify-between items-center  w-1200 my-0 mx-auto">
       <div className="flex gap-6">
-        <Typography
-          as="li"
-          variant="small"
-          color="white"
-          className="p-1 font-medium uppercase text-nowrap"
-        >
-          <a
-            href="/"
-            className="flex items-center hover:text-red-500 transition-colors"
-          >
-            Accueil
-          </a>
-        </Typography>
-        <Typography
-          as="li"
-          variant="small"
-          color="white"
-          className="p-1 font-medium uppercase text-nowrap"
-        >
-          <a
-            href="/#about"
-            className="flex items-center hover:text-red-500 transition-colors"
-          >
-            Le club
-          </a>
-        </Typography>
-        <Typography
-          as="li"
-          variant="small"
-          color="white"
-          className="p-1 font-medium uppercase text-nowrap"
-        >
-          <a
-            href="/#price"
-            className="flex items-center hover:text-red-500 transition-colors"
-          >
-            Nos formules
-          </a>
-        </Typography>
-        <Typography
-          as="li"
-          variant="small"
-          color="white"
-          className="p-1 font-medium uppercase text-nowrap"
-        >
-          <a
-            href="/#planning"
-            className="flex items-center hover:text-red-500 transition-colors"
-          >
-            Planning
-          </a>
-        </Typography>
-        <Typography
-          as="li"
-          variant="small"
-          color="white"
-          className="p-1 font-medium uppercase text-nowrap"
-        >
-          <a
-            href="/champion"
-            className="flex items-center hover:text-red-500 transition-colors"
-          >
-            Nos champions
-          </a>
-        </Typography>
+        <Link href="/">
+          <Image
+            src={logo}
+            alt="logo"
+            width={120}
+            className="mt-1 flex flex-initial justify-center"
+          />
+        </Link>
       </div>
-      <Link href="/">
-        <Image
-          src={logo}
-          alt="logo"
-          width={150}
-          className="mt-1 flex flex-initial justify-center"
-        />
-      </Link>
-      <div className="flex basis-3/12 justify-end items-center gap-6">
+
+      <div className="flex  justify-end items-center gap-6">
         <Typography
-          as="li"
+          as="a"
           variant="small"
           color="white"
-          className="p-1 font-medium uppercase text-nowrap"
+          href="/"
+          className="p-1 font-medium uppercase text-nowrap  hover:text-red-600 "
         >
-          <a
-            href="/#contact"
-            className="flex items-center hover:text-red-500 transition-colors"
-          >
-            Contact
-          </a>
+          Accueil
+        </Typography>
+        <Typography
+          as="a"
+          href="/#about"
+          variant="small"
+          color="white"
+          className="p-1 font-medium uppercase text-nowrap hover:text-red-600"
+        >
+          Le club
+        </Typography>
+        <Typography
+          as="a"
+          href="/#price"
+          variant="small"
+          color="white"
+          className="p-1 font-medium uppercase text-nowrap hover:text-red-600 "
+        >
+          Nos formules
+        </Typography>
+        <Typography
+          as="a"
+          variant="small"
+          color="white"
+          href="/#planning"
+          className="p-1 font-medium uppercase text-nowrap hover:text-red-600"
+        >
+          Planning
+        </Typography>
+        <Typography
+          as="a"
+          href="/champion"
+          variant="small"
+          color="white"
+          className="p-1 font-medium uppercase text-nowrap  hover:text-red-600"
+        >
+          Nos champions
+        </Typography>
+        <Typography
+          as="a"
+          href="/#contact"
+          variant="small"
+          color="white"
+          className="p-1 font-medium uppercase text-nowrap hover:text-red-600"
+        >
+          Contact
         </Typography>
         <Menu>
           <MenuHandler>

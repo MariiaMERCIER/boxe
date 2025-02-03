@@ -1,101 +1,127 @@
+"use client";
 import { Typography } from "@material-tailwind/react";
 import Image from "next/image";
 import logo from "@/assets/images/logo.png";
-
+import fb from "@/assets/images/fb.png";
+import instagram from "@/assets/images/instagram.png";
+import Link from "next/link";
 export function Footer() {
   return (
-    <footer className="bg-black  p-8 h-24 w-1200 my-0 mx-auto">
-      {/* <footer className="h-24 flex flex-col w-1200 my-0 mx-auto bg-black "> */}
-      <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 bg-white text-center md:justify-between">
-        <Image
-          src={logo}
-          alt="logo"
-          width={120}
-          className="mt-1 flex flex-initial justify-center"
-        />
-        <div className="p-6">
-          <Typography variant="h6" color="white">
-            <b> ASCM MARLIOZ </b>
-          </Typography>
-          <Typography variant="paragraph" color="white">
-            Boulevard de la Roche du roie Salle
-            <br /> Sta-Bernadette
-            <br /> Aix-les-Bains (73100)
-          </Typography>
+    <footer className="bg-black py-8 flex flex-col gap-y-4">
+      <div className="flex  bg-black text-center md:justify-between w-1200 my-0 mx-auto">
+        <div className="flex items-center gap-x-6 ">
+          <Image
+            src={logo}
+            alt="logo"
+            width={120}
+            className="flex justify-center "
+          />
+          <div className="flex flex-col gap-y-2">
+            <Typography
+              variant="small"
+              color="white"
+              className="flex flex-col justify-start  items-start "
+            >
+              <span className="font-bold">ASCM MARLIOZ</span>
+
+              <span>Boulevard de la Roche du roie Salle</span>
+              <span> Sta-Bernadette</span>
+
+              <span> Aix-les-Bains (73100)</span>
+            </Typography>
+            <div className="flex gap-x-2">
+              <Link href="https://www.facebook.com/team.marlioz">
+                <Image
+                  src={fb}
+                  alt="facebook"
+                  width={20}
+                  className="flex justify-center "
+                ></Image>
+              </Link>
+              <Link href="https://www.instagram.com/ascm_muaythai_gym_/">
+                <Image
+                  src={instagram}
+                  alt="instagram"
+                  width={20}
+                  className="flex justify-center "
+                ></Image>
+              </Link>
+            </div>
+          </div>
         </div>
 
-        <ul className="grid grid-cols-2 p-6">
-          <Typography
-            as="li"
-            variant="small"
-            color="white"
-            className="p-1 flex font-medium text-nowrap justify-end"
-          >
-            <a
+        <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
+          <li>
+            <Typography
+              as="a"
+              variant="small"
+              color="white"
               href="#home"
-              className="flex items-center hover:text-red-500 transition-colors"
+              className="p-1 flex font-medium text-nowrap justify-end  hover:text-red-600"
             >
               Accueil
-            </a>
-          </Typography>
-          <Typography
-            as="li"
-            variant="small"
-            color="white"
-            className="p-1  flex font-medium text-nowrap justify-end"
-          >
-            <a
+            </Typography>
+          </li>
+          <li>
+            <Typography
+              as="a"
+              variant="small"
+              color="white"
               href="#about"
-              className="flex items-center hover:text-red-500 transition-colors"
+              className="p-1  flex font-medium text-nowrap justify-end  hover:text-red-600"
             >
               Le club
-            </a>
-          </Typography>
-          <Typography
-            as="li"
-            variant="small"
-            color="white"
-            className="p-1 flex font-medium text-nowrap justify-end"
-          >
-            <a
+            </Typography>
+          </li>
+          <li>
+            <Typography
+              as="a"
+              variant="small"
               href="#price"
-              className="flex items-center hover:text-red-500 transition-colors"
+              color="white"
+              className="p-1 flex font-medium text-nowrap justify-end  hover:text-red-600"
             >
               Nos formules
-            </a>
-          </Typography>
-          <Typography
-            as="li"
-            variant="small"
-            color="white"
-            className="p-1 flex font-medium text-nowrap justify-end"
-          >
-            <a
+            </Typography>
+          </li>
+          <li>
+            <Typography
+              as="a"
+              variant="small"
+              color="white"
               href="#planning"
-              className="flex items-center hover:text-red-500 transition-colors"
+              className="p-1 flex font-medium text-nowrap justify-end  hover:text-red-600"
             >
               Planning
-            </a>
-          </Typography>
-
-          <Typography
-            as="li"
-            variant="small"
-            color="white"
-            className="p-1 flex font-medium text-nowrap justify-end"
-          >
-            <a
+            </Typography>
+          </li>
+          <li>
+            <Typography
+              as="a"
+              variant="small"
+              href="/champion"
+              color="white"
+              className="p-1 flex font-medium text-nowrap justify-end hover:text-red-600"
+            >
+              Nos champions
+            </Typography>
+          </li>
+          <li>
+            <Typography
+              as="a"
+              variant="small"
               href="#contact"
-              className="flex items-center hover:text-red-500 transition-colors"
+              color="white"
+              className="p-1 flex font-medium text-nowrap justify-end hover:text-red-600"
             >
               Contact
-            </a>
-          </Typography>
+            </Typography>
+          </li>
         </ul>
       </div>
 
-      <Typography variant="small" color="white" className="pb-2">
-        © 2021 ASCM - Tous droits réservés
+      <Typography color="white" className="pb-2 w-1200 my-0 mx-auto text-xs">
+        &copy; 2021 ASCM - Tous droits réservés
       </Typography>
     </footer>
   );
