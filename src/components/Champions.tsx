@@ -2,8 +2,7 @@
 
 import useSWR, { Fetcher } from "swr";
 
-import Image from "next/image";
-import { CldImage } from "next-cloudinary";
+import { CldImage, CldUploadWidget } from "next-cloudinary";
 import { Typography } from "@material-tailwind/react";
 import { useUser } from "@auth0/nextjs-auth0/client";
 import Link from "next/link";
@@ -21,20 +20,20 @@ type Data = {
   rate_limit_reset_at: string;
 };
 const fetcher: Fetcher<Data> = async (url: string) => {
-  const response = await fetch(url);
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
 
-  if (response.status !== 200) {
-    throw new Error("Erreur lors de la récupération des images");
+    return data;
+  } catch (error) {
+    console.error("Erreur lors de la récupération des images", error);
   }
-  const data = await response.json();
-
-  return data;
 };
 
 export default function Champions() {
   const { data: images, error, isLoading } = useSWR("/api/getImages", fetcher);
   const { user, isLoading: loadingUser } = useUser();
-  console.log("user", user);
+
   if (isLoading ?? loadingUser) return <p>Chargement...</p>;
   if (error) return <p>Erreur: {error.message}</p>;
 
@@ -42,7 +41,17 @@ export default function Champions() {
     <div>
       <Typography variant="h3">{"Galerie d'images"}</Typography>
       {user ? (
-        <Link href="/admin">Rajouter les photos</Link>
+        <CldUploadWidget
+          signatureEndpoint={"/api/sign-cloudinary-params"}
+          uploadPreset="next_boxe_app"
+          onQueuesEnd={(result, { widget }) => {
+            widget.close();
+          }}
+        >
+          {({ open }) => {
+            return <button onClick={() => open()}>Rajouter des photos</button>;
+          }}
+        </CldUploadWidget>
       ) : (
         <div>
           <Typography variant="small">
@@ -60,13 +69,13 @@ export default function Champions() {
       {isLoading ? (
         <Typography variant="small">Chargement...</Typography>
       ) : (
-        <div>
+        <div className="flex flex-wrap gap-6">
           {images?.resources.map((image) => {
             return (
               <CldImage
                 key={image.asset_id}
-                width="960"
-                height="600"
+                width="280"
+                height="300"
                 src={image.public_id}
                 alt="Description of my image"
               />

@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import {
+  Avatar,
+  Badge,
   Menu,
   MenuHandler,
   MenuItem,
@@ -114,12 +116,19 @@ export function HeaderNavbar() {
                 placement="top"
                 content={user ? "Admin" : "Pas connecté"}
               >
-                <Image
-                  src={User}
-                  alt="user"
-                  width={30}
-                  className="mt-1 flex flex-initial justify-center cursor-pointer"
-                />
+                <Badge
+                  placement="bottom-end"
+                  overlap="circular"
+                  color={user ? "green" : "red"}
+                  withBorder
+                >
+                  <Image
+                    src={User}
+                    alt="user"
+                    width={30}
+                    className="mt-1 flex flex-initial justify-center cursor-pointer"
+                  />
+                </Badge>
               </Tooltip>
             </div>
           </MenuHandler>

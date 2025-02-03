@@ -1,13 +1,12 @@
-"use client"; // Marque cette page comme client-side rendering
+"use client";
 
 import { useUser } from "@auth0/nextjs-auth0/client";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 
-import { CldUploadWidget, CloudinaryUploadWidgetInfo } from "next-cloudinary";
+import { CldUploadWidget } from "next-cloudinary";
 
-const AdminPage = (props: { signatureEndpoint: string }) => {
-  const [result, setResult] = useState<CloudinaryUploadWidgetInfo>();
+const AdminPage = () => {
   const { user, isLoading } = useUser();
   const router = useRouter();
 
@@ -20,15 +19,19 @@ const AdminPage = (props: { signatureEndpoint: string }) => {
     }
   }, [user, isLoading, router]);
 
-  if (isLoading) return <p>Chargement...</p>;
-
   return (
     <div>
       <h1>Page d'Administration</h1>{" "}
       {isLoading ? (
         "Chargement ..."
       ) : (
-        <CldUploadWidget signatureEndpoint={props.signatureEndpoint}>
+        <CldUploadWidget
+          signatureEndpoint={"/api/sign-cloudinary-params"}
+          uploadPreset="next_boxe_app"
+          onQueuesEnd={(result, { widget }) => {
+            widget.close();
+          }}
+        >
           {({ open }) => {
             return <button onClick={() => open()}>Upload an Image</button>;
           }}
