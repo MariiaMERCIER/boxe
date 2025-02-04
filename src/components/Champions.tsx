@@ -109,10 +109,9 @@ export default function Champions() {
           <div className="flex flex-wrap gap-6">
             {images?.resources.map((image) => {
               return (
-                <figure className="relative h-300 w-280">
+                <figure key={image.asset_id} className="relative h-300 w-280">
                   <CldImage
                     className=" rounded-xl object-cover object-center"
-                    key={image.asset_id}
                     width="280"
                     height="300"
                     src={image.public_id}
