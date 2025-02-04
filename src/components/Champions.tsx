@@ -109,29 +109,39 @@ export default function Champions() {
           <div className="flex flex-wrap gap-6">
             {images?.resources.map((image) => {
               return (
-                <figure key={image.asset_id} className="relative h-300 w-280">
-                  <CldImage
-                    className=" rounded-xl object-cover object-center"
-                    width="280"
-                    height="300"
-                    src={image.public_id}
-                    alt="Description of my image"
-                  />
-                  <figcaption
-                    v-if={user}
-                    className="absolute top-2 right-2 rounded-full  bg-white/75 shadow-lg px-3 py-1"
-                  >
-                    <Typography
-                      className=" hover:text-red-600 text-black cursor-pointer"
-                      as="a"
-                      variant="h5"
-                      color="blue-gray"
-                      onClick={() => deleteImage(image.public_id)}
-                    >
-                      x
-                    </Typography>
-                  </figcaption>
-                </figure>
+                <div key={image.asset_id} className="w-280 h-300 flex ">
+                  {user ? (
+                    <figure className="relative flex w-280 h-300 justify-start ">
+                      <CldImage
+                        width="280"
+                        height="300"
+                        className="rounded-xl object-cover object-center"
+                        src={image.public_id}
+                        alt="Description of my image"
+                      />
+
+                      <figcaption className="absolute top-2 right-2 rounded-full  bg-white/75 shadow-lg px-3 py-1">
+                        <Typography
+                          className=" hover:text-red-600 text-black cursor-pointer"
+                          as="a"
+                          variant="h5"
+                          color="blue-gray"
+                          onClick={() => deleteImage(image.public_id)}
+                        >
+                          x
+                        </Typography>
+                      </figcaption>
+                    </figure>
+                  ) : (
+                    <CldImage
+                      className=" rounded-xl object-cover object-center"
+                      width="280"
+                      height="300"
+                      src={image.public_id}
+                      alt="Description of my image"
+                    />
+                  )}
+                </div>
               );
             })}
           </div>
