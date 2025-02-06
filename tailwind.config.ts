@@ -22,6 +22,9 @@ module.exports = withMT({
       height: {
         "300": "18.75rem",
       },
+      maxWidth: {
+        "1200": "75rem",
+      },
       minHeight: {
         "592": "37rem",
       },

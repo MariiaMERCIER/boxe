@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import { HeaderNavbar } from "@/components/HeaderNavbar";
 import { UserProvider } from "@auth0/nextjs-auth0/client";
@@ -23,10 +22,10 @@ export default function RootLayout({
       </head>
       <UserProvider>
         <body className="flex flex-1 flex-col">
-          <div className="sticky top-0 w-full bg-black overflow-hidden z-10 border-b border-gray-600 border-solid">
+          <div className="sticky top-0 w-full bg-black overflow-hidden z-10 border-b border-gray-600 border-solid ">
             <HeaderNavbar />
           </div>
-          <main className="flex flex-1">{children}</main>
+          <div className="flex flex-1">{children}</div>
           <div className="w-full  border-t border-gray-600 border-solid mt-auto ">
             <Footer />
           </div>

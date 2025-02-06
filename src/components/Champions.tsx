@@ -68,7 +68,7 @@ export default function Champions() {
       {isLoading || loadingUser ? (
         <ImageSkeleton />
       ) : (
-        <div className="flex flex-col gap- items-start gap-6">
+        <div className="flex flex-col items-start gap-6">
           {user ? (
             <CldUploadWidget
               signatureEndpoint={"/api/sign-cloudinary-params"}
@@ -90,7 +90,7 @@ export default function Champions() {
               }}
             </CldUploadWidget>
           ) : (
-            <div className="flex  gap-2">
+            <div className="flex flex-col gap-2 lg:flex-row ">
               <Typography variant="small">
                 <i>
                   Pour pouvoir rajouter/supprimer des photos il faudrait vous

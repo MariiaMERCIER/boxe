@@ -72,9 +72,9 @@ export function Contact() {
   return (
     <Card
       color="transparent"
-      className="flex flex-row w-full gap-20 flex-between min-h-592"
+      className="flex flex-col lg:flex-row w-full gap-20 flex-between min-h-592"
     >
-      <div className="flex flex-col w-1/2 gap-7 ">
+      <div className="flex flex-col w-full lg:w-1/2 gap-7 ">
         <form
           method="POST"
           className="w-full flex flex-col gap-7 "
@@ -146,6 +146,9 @@ export function Contact() {
                 />
               </div>
             </div>
+            <div className="w-full h-300 lg:w-1/2 boderd-solid border-2 flex lg:hidden">
+              <Map />
+            </div>
           </div>
           <div>
             <Button
@@ -158,7 +161,8 @@ export function Contact() {
           </div>
         </form>
       </div>
-      <div className="w-1/2">
+
+      <div className="w-full h-full  lg:w-1/2 boderd-solid border-2 hidden lg:flex">
         <Map />
       </div>
     </Card>

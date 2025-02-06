@@ -5,10 +5,16 @@ import { ButtonAction } from "@/components/ButtonAction";
 
 export function AboutClub() {
   return (
-    <div className="flex flex-col my-0 mx-auto gap-6 w-1200">
-      <div className="flex flex-row gap-16">
-        <Image src={image1} alt="chef" width="500" height="500" />
-        <div className="flex flex-col items-start justify-between aligngap-6">
+    <div className="flex flex-col my-0 mx-auto gap-6 w-full max-w-1200">
+      <div className="flex flex-col gap-8 lg:flex-row lg:gap-16 ">
+        <Image
+          src={image1}
+          alt="chef"
+          width="500"
+          height="500"
+          className="w-fit"
+        />
+        <div className="flex flex-col items-start justify-between gap-6">
           <Typography
             as="li"
             variant="small"

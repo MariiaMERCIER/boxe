@@ -11,7 +11,7 @@ import image3 from "@/assets/images/coaching.jpg";
 
 export function Formules() {
   return (
-    <div className="flex gap-7">
+    <div className="flex flex-col lg:flex-row gap-7">
       <Card className="mt-6 w-96">
         <CardHeader color="blue-gray" className="relative h-56">
           <Image src={image1} alt="amateur" />

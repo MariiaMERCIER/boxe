@@ -13,23 +13,21 @@ import {
 import Image from "next/image";
 import logo from "@/assets/images/logo.png";
 import Link from "next/link";
-import User from "@/assets/images/user.png";
+import userImg from "@/assets/images/user.png";
 import { useUser } from "@auth0/nextjs-auth0/client";
 
 export function HeaderNavbar() {
   const { user, isLoading } = useUser();
   return (
-    <ul className="h-24 flex justify-between items-center  w-1200 my-0 mx-auto">
-      <div className="flex gap-6">
-        <Link href="/">
-          <Image
-            src={logo}
-            alt="logo"
-            width={120}
-            className="mt-1 flex flex-initial justify-center"
-          />
-        </Link>
-      </div>
+    <ul className="h-24 flex justify-between items-center w-full max-w-1200 mx-auto md:px-8 px-4 ">
+      <Link href="/">
+        <Image
+          src={logo}
+          alt="logo"
+          width={120}
+          className="mt-1 flex flex-initial justify-center"
+        />
+      </Link>
 
       <div className="flex  justify-end items-center gap-6">
         <Typography
@@ -37,7 +35,7 @@ export function HeaderNavbar() {
           variant="small"
           color="white"
           href="/"
-          className="p-1 font-medium uppercase text-nowrap  hover:text-red-600 "
+          className="p-1 font-medium uppercase text-nowrap  hover:text-red-600 hidden lg:flex"
         >
           Accueil
         </Typography>
@@ -46,7 +44,7 @@ export function HeaderNavbar() {
           href="/#about"
           variant="small"
           color="white"
-          className="p-1 font-medium uppercase text-nowrap hover:text-red-600"
+          className="p-1 font-medium uppercase text-nowrap hover:text-red-600 hidden lg:flex"
         >
           Le club
         </Typography>
@@ -55,7 +53,7 @@ export function HeaderNavbar() {
           href="/#price"
           variant="small"
           color="white"
-          className="p-1 font-medium uppercase text-nowrap hover:text-red-600 "
+          className="p-1 font-medium uppercase text-nowrap hover:text-red-600 hidden lg:flex"
         >
           Nos formules
         </Typography>
@@ -64,7 +62,7 @@ export function HeaderNavbar() {
           variant="small"
           color="white"
           href="/#planning"
-          className="p-1 font-medium uppercase text-nowrap hover:text-red-600"
+          className="p-1 font-medium uppercase text-nowrap hover:text-red-600 hidden lg:flex"
         >
           Planning
         </Typography>
@@ -73,7 +71,7 @@ export function HeaderNavbar() {
           href="/champion"
           variant="small"
           color="white"
-          className="p-1 font-medium uppercase text-nowrap  hover:text-red-600"
+          className="p-1 font-medium uppercase text-nowrap  hover:text-red-600 hidden lg:flex"
         >
           Nos champions
         </Typography>
@@ -82,7 +80,7 @@ export function HeaderNavbar() {
           href="/#contact"
           variant="small"
           color="white"
-          className="p-1 font-medium uppercase text-nowrap hover:text-red-600"
+          className="p-1 font-medium uppercase text-nowrap hover:text-red-600 hidden lg:flex"
         >
           Contact
         </Typography>
@@ -100,7 +98,7 @@ export function HeaderNavbar() {
                   withBorder
                 >
                   <Image
-                    src={User}
+                    src={userImg}
                     alt="user"
                     width={30}
                     className="mt-1 flex flex-initial justify-center cursor-pointer"
