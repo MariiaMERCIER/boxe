@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Boxing Club Website
 
-## Getting Started
+This project is a boxing club website built using **Next.js 14.1.4** and styled with **Tailwind Material** for a clean and responsive design.
 
-First, run the development server:
+# Purpose
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This project is about creating a responsive website for a club. It displays key information about the club, prices, planning, contact, photos, and more. The website is designed to adapt to different screen sizes, ensuring a smooth user experience on desktop, tablet, and mobile devices.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Additionally, this project allowed me to further develop my skills in Next.js, a React framework, and explore new libraries for implementing advanced features and improving performance.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The website is a **single-page** application that includes the following sections:
 
-## Learn More
+- **Home**: A homepage featuring a **carousel** of images showcasing the club's highlights.
+- **About the Club**: Provides information about the club, its mission, and other essential details.
+- **Pricing Plans**: Describes the different pricing plans and packages offered by the club.
+- **Course Schedule**: Displays the schedule of upcoming classes, allowing users to see when sessions are available.
+- **Contact Section**: Enables users to send a contact message to be re-contacted.
+  - (You should receive the message in your inbox if the email is correctly set up).
+- **Location Map**: Displays the club's location on a map, allowing users to easily find the venue for courses.
+- **Competition Photos**: A separate page showcasing photos from past competitions.
+  - Users can log in to **add or remove photos** to keep the gallery up to date.
 
-To learn more about Next.js, take a look at the following resources:
+# Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Follow these steps to set up the project locally:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Clone the repository:
 
-## Deploy on Vercel
+   ```bash
+   git clone https://github.com/your-username/your-project-name.git
+   cd your-project-name
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Create a `.env.local` file in the root of the project and add the necessary environment variables. Example:
+   ```bash
+   DB_URI=your-database-uri
+   SECRET_KEY=your-secret-key
+   NEXT_PUBLIC_API_URL=https://api.example.com
+   ```
+3. Install the dependencies:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```bash
+   npm install
+   ```
+
+4. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and go to `http://localhost:3000` to view the website.
+
+### Admin Login
+
+To log in as an **Admin**, you can use the following credentials:
+
+- **Email address**: `boxe@test.com`
+- **Password**: `Sfqy#@qQM9f!Rm&S`
+
+These credentials will allow you to access the admin section where you can add or remove photos and perform other admin tasks.

@@ -56,7 +56,7 @@ export function Footer() {
               as="a"
               variant="small"
               color="white"
-              href="#home"
+              href="/"
               className="p-1 flex font-medium text-nowrap justify-end  hover:text-red-600"
             >
               Accueil
@@ -67,7 +67,7 @@ export function Footer() {
               as="a"
               variant="small"
               color="white"
-              href="#about"
+              href="/#about"
               className="p-1  flex font-medium text-nowrap justify-end  hover:text-red-600"
             >
               Le club
@@ -77,7 +77,7 @@ export function Footer() {
             <Typography
               as="a"
               variant="small"
-              href="#price"
+              href="/#price"
               color="white"
               className="p-1 flex font-medium text-nowrap justify-end  hover:text-red-600"
             >
@@ -89,7 +89,7 @@ export function Footer() {
               as="a"
               variant="small"
               color="white"
-              href="#planning"
+              href="/#planning"
               className="p-1 flex font-medium text-nowrap justify-end  hover:text-red-600"
             >
               Planning
@@ -110,7 +110,7 @@ export function Footer() {
             <Typography
               as="a"
               variant="small"
-              href="#contact"
+              href="/#contact"
               color="white"
               className="p-1 flex font-medium text-nowrap justify-end hover:text-red-600"
             >
