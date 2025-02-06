@@ -2,7 +2,7 @@
 
 This project is a boxing club website built using **Next.js 14.1.4** and styled with **Tailwind Material** for a clean and responsive design.
 
-# Purpose
+## Purpose
 
 This project is about creating a responsive website for a club. It displays key information about the club, prices, planning, contact, photos, and more. The website is designed to adapt to different screen sizes, ensuring a smooth user experience on desktop, tablet, and mobile devices.
 
@@ -22,7 +22,7 @@ The website is a **single-page** application that includes the following section
 - **Competition Photos**: A separate page showcasing photos from past competitions.
   - Users can log in to **add or remove photos** to keep the gallery up to date.
 
-# Installation
+## Installation
 
 Follow these steps to set up the project locally:
 
@@ -53,7 +53,7 @@ Follow these steps to set up the project locally:
 
 5. Open your browser and go to `http://localhost:3000` to view the website.
 
-### Admin Login
+## Admin Login
 
 To log in as an **Admin**, you can use the following credentials:
 
