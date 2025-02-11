@@ -17,7 +17,7 @@ export default function Home() {
       className="flex min-h-screen  w-full flex-col items-center justify-between"
       id="home"
     >
-      <div className="flex flex-col lg:h-screen">
+      <div className="flex flex-col h-[calc(100vh-97px)] w-screen">
         <CarrouselHome />
       </div>
       <div
@@ -37,7 +37,7 @@ export default function Home() {
         <AboutClub />
       </div>
 
-      <div className=" flex flex-col gap-6  p-4 lg:p-16 md:p-8 " id="price ">
+      <div className=" flex flex-col gap-6  p-4 lg:p-16 md:p-8 " id="price">
         <Typography variant="h3" className="uppercase">
           Nos formules
         </Typography>

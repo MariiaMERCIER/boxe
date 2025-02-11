@@ -26,7 +26,7 @@ export async function POST(request: Request) {
   };
   sendSmtpEmail.to = [{ email: email, name: name }];
   sendSmtpEmail.subject = "Confirmation de votre demande de contact";
-  sendSmtpEmail.htmlContent = `<p>Bonjour, ${name}!</p><p>Merci pour votre message. Nous avons bien pris en compte votre demande et notre équipe reviendra vers vous dans les plus brefs délais afin de vous apporter une réponse complète. <br/>Récapitulatif: <br/> Name: <b>${name}</b>. <br/>Email: <b>${email}</b> <br/>. Message: <b>${message}</b>. </p>`;
+  sendSmtpEmail.htmlContent = `<p>Bonjour, ${name}!</p><p>Merci pour votre message. Nous avons bien pris en compte votre demande et notre équipe reviendra vers vous dans les plus brefs délais afin de vous apporter une réponse complète. <br/>Récapitulatif: <br/> Name: <b>${name}</b>. <br/>Email: <b>${email}</b>. <br/>Message: <b>${message}</b>. </p>`;
 
   try {
     const result = await apiInstance.sendTransacEmail(sendSmtpEmail, {
