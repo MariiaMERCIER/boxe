@@ -9,7 +9,6 @@ import Link from "next/link";
 import { ImageSkeleton } from "./ImageSkeleton";
 import { ChampionGalery } from "./ChampionGalery";
 import { useFetch } from "@/hooks/useFetch";
-import { StaticImageData } from "next/image";
 
 type Image = {
   public_id: string;

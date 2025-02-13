@@ -1,5 +1,3 @@
-import { useDelete } from "@/hooks/useDelete";
-import { useUser } from "@auth0/nextjs-auth0/client";
 import { Typography } from "@material-tailwind/react";
 import { CldImage } from "next-cloudinary";
 import { mutate } from "swr";

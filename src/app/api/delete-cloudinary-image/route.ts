@@ -10,7 +10,7 @@ export async function DELETE(request: NextRequest) {
   const body = await request.json();
   const { public_id } = body;
   try {
-    const signature = cloudinary.api.delete_resources([public_id]);
+    const signature = await cloudinary.uploader.destroy(public_id);
     return NextResponse.json(signature);
   } catch (error) {
     console.error(error);
