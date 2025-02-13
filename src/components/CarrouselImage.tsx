@@ -8,7 +8,6 @@ export function CarrouselImage(props: {
   alt: string;
   position: string;
 }) {
-  console.log(props.position);
   return (
     <div className="relative w-full h-full">
       <Image
