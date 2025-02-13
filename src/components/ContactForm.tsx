@@ -75,7 +75,7 @@ export function ContactForm() {
         <div>
           <Input
             label="Votre nom"
-            color="white"
+            color="light-green"
             value={formData.name}
             size="lg"
             placeholder="Prénom NOM"
@@ -96,7 +96,7 @@ export function ContactForm() {
             placeholder="name@mail.com"
             name="email"
             crossOrigin=""
-            color="white"
+            color="light-green"
             onChange={handleInputChange}
           />
           <Typography className="mt-2 text-xs font-normal text-blue-gray-500">
@@ -111,7 +111,7 @@ export function ContactForm() {
             crossOrigin=""
             placeholder="+33654321098"
             name="phone"
-            color="white"
+            color="light-green"
             value={formData.phone}
             onChange={handleInputChange}
           />
@@ -122,6 +122,7 @@ export function ContactForm() {
               label="Votre message"
               name="message"
               rows={6}
+              color="light-green"
               value={formData.message}
               onChange={handleInputChange}
             />

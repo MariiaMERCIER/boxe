@@ -9,7 +9,7 @@ import { ContactFooter } from "./ContactFooter";
 export function Footer() {
   return (
     <footer className="bg-black py-8 flex flex-col gap-y-4">
-      <div className="flex  bg-black text-center md:justify-between w-1200 my-0 mx-auto">
+      <div className="flex  bg-black text-center justify-between lg:w-1200 w-full my-0 mx-auto pl-4 pr-4">
         <div className="flex items-center gap-x-6 ">
           <Image
             src={logo}
@@ -17,14 +17,14 @@ export function Footer() {
             width={120}
             className="flex justify-center "
           />
-          <div className="flex flex-col gap-y-2">
+          <div className="flex-col gap-y-2 hidden lg:flex">
             <ContactFooter />
           </div>
         </div>
 
-        <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
+        <ul className="flex flex-wrap lg:items-center gap-y-2 gap-x-8 lg:flex-row flex-col items-end">
           <li>
-            <FooterTab name="Accuiel" link="/" />
+            <FooterTab name="Accueil" link="/" />
           </li>
           <li>
             <FooterTab name="Le club" link="/#about" />
@@ -44,7 +44,10 @@ export function Footer() {
         </ul>
       </div>
 
-      <Typography color="white" className="pb-2 w-1200 my-0 mx-auto text-xs">
+      <Typography
+        color="white"
+        className="pb-2 w-1200 my-0 mx-auto text-xs pl-4 pr-4"
+      >
         &copy; 2021 ASCM - Tous droits réservés
       </Typography>
     </footer>

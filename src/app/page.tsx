@@ -21,7 +21,7 @@ export default function Home() {
         <CarrouselHome />
       </div>
       <div
-        className=" p-4 lg:p-16 md:p-8 h-2/3 bg-white w-screen flex flex-col gap-6 "
+        className="p-4 lg:p-16 md:p-8 lg:h-2/3 bg-white w-screen flex flex-col gap-6 "
         id="about"
       >
         <div className=" w-full max-w-1200 my-0 mx-auto">

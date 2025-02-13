@@ -8,6 +8,7 @@ export function CarrouselImage(props: {
   alt: string;
   position: string;
 }) {
+  console.log(props.position);
   return (
     <div className="relative w-full h-full">
       <Image
@@ -16,14 +17,20 @@ export function CarrouselImage(props: {
         className="h-full w-full object-cover"
       />
       <div
-        className={`absolute  inset-0 grid  h-full w-full items-${props.position} bg-black/75`}
+        className={`absolute inset-0 h-full w-full items-center justify-center flex  bg-black/75 `}
       >
-        <div className="w-3/4 pl-12 md:w-2/4 md:pl-20 lg:pl-32 object-cover">
-          <Typography variant="lead" color="white" className="mb-12 opacity-80">
+        <div
+          className={`w-full h-full p-10 md:w-2/4 md:pl-20 lg:pl-32 lg:pr-32 object-cover flex flex-col justify-between lg:w-full  lg:justify-center items-${props.position}`}
+        >
+          <Typography
+            variant="lead"
+            color="white"
+            className="mb-12 opacity-80 "
+          >
             {props.content}
           </Typography>
           <div className="flex gap-2 ">
-            <ButtonAction name="Le club" color="white" link="#club" />
+            <ButtonAction name="Nos formules" color="white" link="#price" />
             <ButtonAction
               name="Planning"
               variant="text"

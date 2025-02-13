@@ -21,7 +21,7 @@ export function HeaderNavbar() {
       </Link>
 
       <div className="flex  justify-end items-center gap-6">
-        <HeaderTab name="Accuiel" link="/" />
+        <HeaderTab name="Accueil" link="/" />
         <HeaderTab name="Le club" link="/#about" />
         <HeaderTab name="Nos formules" link="/#price" />
         <HeaderTab name="Planning" link="/#planning" />
