@@ -37,6 +37,9 @@ export default function Champions() {
               onQueuesEnd={(result, { widget }) => {
                 widget.close();
               }}
+              options={{
+                tags: ["boxe"],
+              }}
             >
               {({ open }) => {
                 return (

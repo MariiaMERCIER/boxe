@@ -9,9 +9,7 @@ cloudinary.config({
 
 export async function GET() {
   try {
-    const cloudinaryUrl = await cloudinary.api.resources({
-      type: "upload",
-      prefix: "boxe/",
+    const cloudinaryUrl = await cloudinary.api.resources_by_tag("boxe", {
       max_results: 10,
     });
 
