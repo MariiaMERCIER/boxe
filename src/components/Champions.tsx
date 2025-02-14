@@ -1,6 +1,6 @@
 "use client";
 
-import useSWR, { Fetcher } from "swr";
+import useSWR from "swr";
 
 import { CldUploadWidget } from "next-cloudinary";
 import { Button, Typography } from "@material-tailwind/react";
