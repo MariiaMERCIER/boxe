@@ -1,6 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 import { ButtonAction } from "./ButtonAction";
 import { Typography } from "@material-tailwind/react";
+
 export function CarrouselImage(props: {
   image: StaticImageData;
   content: string;
