@@ -1,4 +1,4 @@
-export async function useFetch(url: string) {
+export async function fetcher(url: string) {
   try {
     const response = await fetch(url);
     const data = await response.json();

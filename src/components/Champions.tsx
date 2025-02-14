@@ -8,7 +8,7 @@ import { useUser } from "@auth0/nextjs-auth0/client";
 import Link from "next/link";
 import { ImageSkeleton } from "./ImageSkeleton";
 import { ChampionGalery } from "./ChampionGalery";
-import { useFetch } from "@/hooks/useFetch";
+import { fetcher } from "@/lib/fetcher";
 
 type Image = {
   public_id: string;
@@ -18,7 +18,7 @@ type Image = {
 };
 
 export default function Champions() {
-  const { data: images, isLoading } = useSWR("/api/get-images", useFetch);
+  const { data: images, isLoading } = useSWR("/api/get-images", fetcher);
   const { user, isLoading: loadingUser } = useUser();
 
   return (
