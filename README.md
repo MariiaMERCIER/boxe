@@ -8,6 +8,13 @@ This project is about creating a responsive website for a club. It displays key 
 
 Additionally, this project allowed me to further develop my skills in Next.js, a React framework, and explore new libraries for implementing advanced features and improving performance.
 
+
+The external services are used as follows:
+
+- **Auth0** for authentication.
+- **Cloudinary** for image uploads.
+- **Brevo** for emailing.
+
 ## Features
 
 The website is a **single-page** application that includes the following sections:
